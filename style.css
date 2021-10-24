@@ -1,10 +1,10 @@
-body{
+body {
     height: 100vh;
     display: grid;
     place-items: center;
 }
 
-.icon{
+.icon {
     position: relative;
     height: 25px;
     width: 25px;
@@ -12,9 +12,10 @@ body{
     place-items: center;
     cursor: pointer;
     border-radius: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
-svg{
+svg {
     stroke-width: 1px;
     stroke: #444;
     fill: white;
@@ -23,7 +24,7 @@ svg{
     height: 100%;
 }
 
-.svg-icon{
+.svg-icon {
     background-color: #444;
     position: absolute;
     top: 50%;
@@ -36,24 +37,28 @@ svg{
 }
 
 
-.svg-fill{
+.svg-fill {
     fill: #444;
-    transition: fill 300ms ease-in;
+    transition: fill 100ms ease;
 }
 
-.svg-animate{
-    animation: pulse 800ms ease-in;
+.svg-animate {
+    animation: pulse 800ms linear;
     fill: #444
 }
 
 @keyframes pulse {
-    0%{
-        opacity: .6;
+    00% {
+        opacity: .9;
     }
-    100%{
+
+    80% {
         opacity: 0;
         width: 70px;
         height: 70px;
+    }
+    100%{
+        opacity: 0;
     }
 
 }
