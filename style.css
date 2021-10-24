@@ -4,6 +4,12 @@ body {
     place-items: center;
 }
 
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
 .icon {
     position: relative;
     height: 25px;
@@ -22,7 +28,7 @@ svg {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: fill 300ms ease;
+    transition: fill 800ms ease;
 }
 
 .svg-icon {
@@ -54,7 +60,7 @@ svg {
     }
     100%{
         opacity: 0;
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
     }
 }
